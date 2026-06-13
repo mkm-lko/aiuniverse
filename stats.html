@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Universe statistics — see the numbers behind the world's most comprehensive AI tool directory. Category breakdowns, user stats, and more.">
+    <title>AI UNIVERSE — Stats | AI Industry Numbers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="stats">
+    <div class="cyber-grid"></div>
+    <div class="radial-glow"></div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><span class="logo-icon">▲</span> AI <span class="accent-text">UNIVERSE</span></a>
+            <nav class="nav">
+                <a href="index.html"    class="nav-link">Home</a>
+                <a href="explore.html"  class="nav-link">Explore AIs</a>
+                <a href="compare.html"  class="nav-link">Compare</a>
+                <a href="rankings.html" class="nav-link">Rankings</a>
+                <a href="stats.html"    class="nav-link">Stats</a>
+                <a href="faq.html"      class="nav-link">FAQ</a>
+            </nav>
+            <div class="header-actions"><a href="explore.html" class="btn-nav">Launch Directory</a></div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
+    <div class="mobile-nav-drawer">
+        <nav class="mobile-nav">
+            <a href="index.html"    class="mobile-nav-link">Home</a>
+            <a href="explore.html"  class="mobile-nav-link">Explore AIs</a>
+            <a href="compare.html"  class="mobile-nav-link">Compare</a>
+            <a href="rankings.html" class="mobile-nav-link">Rankings</a>
+            <a href="stats.html"    class="mobile-nav-link">Stats</a>
+            <a href="faq.html"      class="mobile-nav-link">FAQ</a>
+            <a href="explore.html"  class="mobile-btn-nav">Launch Directory</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-badge">📊 Live Data</div>
+                <h1 class="page-hero-title">AI Universe Stats</h1>
+                <p class="page-hero-subtitle">Numbers behind the world's most comprehensive AI directory — tools tracked, categories covered, and global reach</p>
+            </div>
+        </section>
+
+        <!-- Key Counters -->
+        <section class="stats-section stats-page-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card glass-panel" data-scroll>
+                        <div class="stat-glow coding-glow"></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="15">0</span>
+                        </div>
+                        <h4 class="stat-label">AI Tools Indexed</h4>
+                        <p class="stat-desc">Core platforms across every major category</p>
+                    </div>
+                    <div class="stat-card glass-panel" data-scroll>
+                        <div class="stat-glow research-glow"></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="9">0</span>
+                        </div>
+                        <h4 class="stat-label">Categories</h4>
+                        <p class="stat-desc">From chatbots to education AI</p>
+                    </div>
+                    <div class="stat-card glass-panel" data-scroll>
+                        <div class="stat-glow images-glow"></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="7">0</span>
+                        </div>
+                        <h4 class="stat-label">Feature Dimensions</h4>
+                        <p class="stat-desc">Chat, Images, Video, Audio, Coding, Research, Free Plan</p>
+                    </div>
+                    <div class="stat-card glass-panel" data-scroll>
+                        <div class="stat-glow videos-glow"></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="50">0</span><span class="stat-plus">M+</span>
+                        </div>
+                        <h4 class="stat-label">Global Users</h4>
+                        <p class="stat-desc">Monthly active users across all platforms</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Breakdown Bars -->
+        <section style="background:var(--bg-darker);border-top:1px solid rgba(255,255,255,0.02);padding:80px 0">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Tools by Category</h2>
+                    <p class="section-tagline">Distribution of AI tools across our directory</p>
+                </div>
+                <div id="category-bars" style="max-width:700px">
+                    <!-- Populated by script.js initStatsPage() -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About the Database -->
+        <section style="background:var(--bg-color);border-top:1px solid rgba(255,255,255,0.02);padding:80px 0">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">About This Database</h2>
+                    <p class="section-tagline">How we track, rate, and curate the AI Universe directory</p>
+                </div>
+                <div class="stats-about-grid">
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">🎯</div>
+                        <h3>Curated Selection</h3>
+                        <p>Every tool in AI Universe is hand-picked for relevance, maturity, and real-world impact. We focus on tools that have proven value to creators, developers, and researchers.</p>
+                    </div>
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">⭐</div>
+                        <h3>Rating Methodology</h3>
+                        <p>Ratings reflect a composite of community feedback, benchmark performance, ease of use, and capability breadth — scored on a 5.0 scale across multiple dimensions.</p>
+                    </div>
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">🔄</div>
+                        <h3>Regular Updates</h3>
+                        <p>The AI landscape evolves rapidly. Our database is reviewed and refreshed continuously as tools release new models, features, pricing changes, or achieve viral adoption.</p>
+                    </div>
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">🌍</div>
+                        <h3>Global Coverage</h3>
+                        <p>We track AI tools with significant international adoption, covering platforms from North America, Europe, and Asia with English-language accessibility as a primary criterion.</p>
+                    </div>
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">🔬</div>
+                        <h3>Feature Verification</h3>
+                        <p>The feature matrix (Chat, Images, Video, Audio, Coding, Research, Free Plan) is verified by hands-on testing of each platform's publicly available tiers and documentation.</p>
+                    </div>
+                    <div class="stats-about-card glass-panel" data-scroll>
+                        <div class="stats-about-icon">📬</div>
+                        <h3>Community Submissions</h3>
+                        <p>We welcome tool submissions from the community. If you believe an important AI platform should be added or an existing entry needs correction, reach out to our team.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner-section">
+            <div class="container">
+                <h2 class="cta-banner-title">Explore the Full Directory</h2>
+                <p class="cta-banner-sub">All 15 tools. 9 categories. Fully searchable and filterable — ready to find your perfect AI.</p>
+                <div class="cta-banner-btns">
+                    <a href="explore.html" class="btn-primary">Browse AI Directory</a>
+                    <a href="compare.html" class="btn-secondary">Compare Tools</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="index.html" class="logo footer-logo"><span class="logo-icon">▲</span> AI <span class="accent-text">UNIVERSE</span></a>
+                <p class="footer-desc">The complete galaxy of artificial intelligence. Explore, compare, and harness the most powerful models shaping human productivity.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="X/Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="social-icon" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h5 class="footer-title">Pages</h5>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore AIs</a></li>
+                    <li><a href="compare.html">Compare</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5 class="footer-title">Categories</h5>
+                <ul class="footer-links">
+                    <li><a href="explore.html?cat=Chatbots">Chatbots</a></li>
+                    <li><a href="explore.html?cat=Coding">Coding</a></li>
+                    <li><a href="explore.html?cat=Image Generation">Graphics</a></li>
+                    <li><a href="explore.html?cat=Research">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h5 class="footer-title">More</h5>
+                <ul class="footer-links">
+                    <li><a href="stats.html">Statistics</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#">Submit AI Tool</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>AI UNIVERSE &copy; 2026 &mdash; Explore the Future of Artificial Intelligence</p>
+            <p class="cyber-stamp">SYSTEM: ACTIVE // NODES: 15 ONLINE</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
